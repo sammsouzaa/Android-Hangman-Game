@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:elevation="7dp"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/cancelID"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_close"
+            android:background="@android:color/transparent"
+            android:layout_gravity="right|top"/>
+
+        <TextView
+            android:id="@+id/resultadoID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parabéns"
+            android:layout_marginStart="8dp"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Você ganhou!!!!"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_playAgainID"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="Jogar Novamente"
+                android:textColor="@color/white"
+                android:background="@drawable/dialog_bg"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/btn_backMenuID"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="Voltar ao Menu"
+                android:textColor="@color/white"
+                android:background="@drawable/dialog_bg"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="78dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="150dp"
+        android:elevation="10dp"
+        android:scrollbarSize="20dp"
+        android:src="@drawable/baseline_notify" />
+
+
+</RelativeLayout>

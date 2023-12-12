@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".telajogo">
+
+    <EditText
+        android:id="@+id/entradaLetra"
+        android:layout_width="294dp"
+        android:layout_height="66dp"
+        android:background="@drawable/background_edittext"
+        android:drawableStart="@drawable/baseline_done"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/brownHard"
+        android:ems="10"
+        android:hint="Digite uma Letra"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColorHint="@color/brownHard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
+
+    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="Letras Usadas: "
+                android:textColor="@color/brownsuperhard"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.147"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.205" />
+
+            <TextView
+                android:id="@+id/menuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/backimg"
+                android:drawablePadding="2dp"
+                android:drawableTint="@color/brownsuperhard"
+                android:text="menu"
+                android:textAllCaps="true"
+                android:textColor="@color/brownsuperhard"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.057" />
+
+            <TextView
+                android:id="@+id/gamemode"
+                android:layout_width="278dp"
+                android:layout_height="87dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:gravity="center"
+                android:text="Modos de Jogo"
+                android:textColor="@color/brownsuperhard"
+                android:textSize="50sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.103" />
+
+            <TextView
+                android:id="@+id/forcaescolhida"
+                android:layout_width="342dp"
+                android:layout_height="83dp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:gravity="center"
+                android:text="word of"
+                android:textColor="@color/brownsuperhard"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.697" />
+
+            <TextView
+                android:id="@+id/letrasUsadasID"
+                android:layout_width="303dp"
+                android:layout_height="81dp"
+                android:text="TextView"
+                android:textStyle="italic"
+                android:textAllCaps="true"
+                android:textSize="19sp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.289" />
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="270dp"
+        android:layout_height="49dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="Ver"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
+
+    <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="425dp"
+                android:layout_height="323dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="11dp"
+                app:layout_constraintBottom_toTopOf="@+id/entradaLetra"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/letrasUsadasID"
+                app:layout_constraintVertical_bias="0.62"
+                app:srcCompat="@drawable/pendurado" />
+
+            <ImageView
+                android:id="@+id/braco_d"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="367dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.559"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.994"
+                app:srcCompat="@drawable/braco_d" />
+
+            <ImageView
+                android:id="@+id/braco_e"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.467"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.509"
+                app:srcCompat="@drawable/braco_e" />
+
+            <ImageView
+                android:id="@+id/cabeca"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.432"
+                app:srcCompat="@drawable/cabeca" />
+
+            <ImageView
+                android:id="@+id/perna_d"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.591"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.626"
+                app:srcCompat="@drawable/perna_d" />
+
+            <ImageView
+                android:id="@+id/perna_e"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.452"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.611"
+                app:srcCompat="@drawable/perna_e" />
+
+            <ImageView
+                android:id="@+id/corpo"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.447"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.539"
+                app:srcCompat="@drawable/corpoooo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

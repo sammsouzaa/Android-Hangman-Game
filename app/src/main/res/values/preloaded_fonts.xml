@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abril_fatface</item>
+        <item>@font/alegreya</item>
+        <item>@font/annie_use_your_telescope</item>
+        <item>@font/arbutus</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/armata</item>
+        <item>@font/audiowide</item>
+        <item>@font/baloo</item>
+    </array>
+</resources>
